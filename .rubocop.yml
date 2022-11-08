@@ -50,3 +50,6 @@ Style/HashTransformKeys:
   Enabled: false
 Style/HashTransformValues:
   Enabled: false
+  AllCops:
+  Exclude:
+    - 'path/to/excluded/student.rb'
