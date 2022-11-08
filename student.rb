@@ -18,4 +18,4 @@ class Student < Person
 #     @classroom = classroom
 #     classroom.student.push(self) unless classroom.student.include?(self)
 #   end
-# end
+end
