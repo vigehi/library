@@ -1,4 +1,5 @@
-class Person
+require './decorator'
+class Person < Nameable
   attr_accessor :name, :age, :id, :parent_permission, :rentals
 
   def initialize(age, parent_permision: true, name: 'maximilianus', id: Random.rand(1..1000))
