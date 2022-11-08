@@ -13,4 +13,10 @@ class Student < Person
     "¯\(ツ)/¯"
     # rubocop:disable RuleByName
   end
+
+  def classrooms(classroom)
+    @classroom = classroom
+    classroom.student.push(self) unless classroom.student.include?(self)
+  end
+  
 end
