@@ -1,3 +1,2 @@
 # library
-
-This is the development branch
+A ruby OOP school library project
