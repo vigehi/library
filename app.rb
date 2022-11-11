@@ -21,6 +21,7 @@ class App
     when 4 then create_book
     when 5 then create_rental
     when 6 then list_rentals
+    when 7 then exit(true)
     else
       puts 'Invalid number, please try again!'
     end
@@ -82,8 +83,13 @@ class App
 
   def create_person
     num = check_options('Do you want to create a student (1) or a teacher (2)? [input the number]: ', [1, 2])
+
     age = check_number('Age:')
+
+    print 'name:'
     name = gets.chomp
+    classroom = check_number('Classroom:')
+
     case num
     when 1
       print 'Has parent permission? [y/n]:'
