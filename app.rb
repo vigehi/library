@@ -11,8 +11,9 @@ class App
     @person = []
     @rentals = []
   end
-
+# rubocop:disable ...
   def select_opt
+    # rubocop:disable ...
     option = gets.chomp.to_i
     case option
     when 1 then list_books
