@@ -107,7 +107,7 @@ class Library
 
     date = gets.chomp
 
-    rental = Rental.new(date: date, person: person, book: book)
+    rental = Rental.new(date,  person,  book)
     @rentals << rental
 
     puts "Rental created successfully\n"
